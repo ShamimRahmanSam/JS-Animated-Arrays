@@ -9,8 +9,8 @@ body {
 
 main {
   background-color: #dae7eb;
-  margin: 30px 150px;
-  padding: 0px 70px;
+  margin: 50px 150px;
+  padding: 10px 70px;
   line-height: 1.6;
   display: block;
   justify-content: center;
@@ -65,9 +65,15 @@ h3 {
   font-size: 20px;
 }
 
+h4 {
+  color: #08085f;
+  font-size: 20px;
+}
+
 h1:hover,
 h2:hover,
-h3:hover {
+h3:hover,
+h4:hover {
   color: rgb(3, 3, 3);
   transform: scale(1.05);
 }
