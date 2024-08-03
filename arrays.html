@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Animated Arrays by SRS</title>
+    <link rel="stylesheet" href="/arrays.css" />
+    <script src="/arrays.js" defer></script>
+    <!--                        The reason your script might not run 
+                                without the defer attribute 
+                                is due to the way the browser processes HTML and JavaScript. 
+                                When the browser encounters a <script> tag, 
+                                it pauses the parsing of the HTML to fetch and execute the script. 
+                                If the script tries to access elements that haven't been parsed yet, 
+                                such as document.getElementById("demo1"), it will fail 
+                                because those elements don't exist in the DOM at that moment.-->
+  </head>
+  <body>
+    <header>
+      <h1>JS Animated Arrays</h1>
+    </header>
+    <main class="container">
+      <h1 class="underline-heading">Arrays</h1>
+      <p>
+        An array is a special variable, which can hold more than one value.<br />
+        However, what if you want to loop through the cars and find a specific
+        one? And what if you had not 3 cars, but 300? <br />
+        The solution is an array! <br />
+        An array can hold many values under a single name, and you can access
+        the values by referring to an index number.
+      </p>
+      <p id="demo1" class="style"></p>
+      <br />
+      <br />
+      <hr />
+      <h3>
+        <em
+          >N.B: Check the JS code file(arrays.js) to understand more about all
+          of the black box outputs of this website and check html & css
+          file(Arrays.html & arrays.css) to understand more about the design of
+          this whole website.
+        </em>
+      </h3>
+      <hr />
+      <br />
+      <br />
+
+      <h2 class="underline-heading">Creating an Array</h2>
+      <p>
+        Using an array literal is the easiest way to create a JavaScript
+        Array.<br />
+        Syntax:<br />
+        const array_name = [item1, item2, ...]; <br />
+      </p>
+      <h3>It is a common practice to declare arrays with the const keyword.</h3>
+      <p id="demo2" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Accessing Array Elements</h2>
+      <p>
+        access an array element by referring to the index number.<br />
+        Arrays use numbers to access its "elements".<br />
+        In this example, cars[0] returns Lamborghini
+      </p>
+      <p id="demo4" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Changing an Array Element</h2>
+      <p>
+        Bracket Indexing<br />
+        JavaScript array elements are accessed using numeric indexes (starting
+        from 0).
+      </p>
+      <p id="demo5" class="style"></p>
+
+      <br />
+      <br />
+      <hr />
+      <br />
+      <hr />
+      <br />
+      <hr />
+      <br />
+
+      <h1 class="underline-heading">JavaScript Array Methods</h1>
+      <br />
+      <h2 class="underline-heading">Array Properties and Methods</h2>
+      <p>
+        The real strength of JavaScript arrays are the built-in array properties
+        and methods:
+      </p>
+      <h3>
+        cars.length <br />
+        // Returns the number of elements <br />
+        <br />
+        cars.sort() <br />
+        // Sorts the array
+      </h3>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Converting an Array to a String</h2>
+      <p>
+        The toString() Method<br />
+        The toString() method returns an array as a comma separated string:
+      </p>
+      <p id="demo6" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Array join()</h2>
+      <p>
+        The join() method also joins all array elements into a string.
+        <br />
+        It behaves just like toString(),<br />
+        but in addition you can specify the separator
+      </p>
+      <p id="demo28" class="style"></p>
+
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+
+      <h2 class="underline-heading">The length Property</h2>
+      <p id="demo9" class="style"></p>
+      <p>
+        The length property of an array returns the length of an array (the
+        number of array elements).<br />
+        The length property is always one more than the highest array index.
+      </p>
+      <p id="demo10" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Accessing the First Array Element</h2>
+      <p>
+        JavaScript array elements are accesses using numeric indexes (starting
+        from 0).
+      </p>
+      <p id="demo11" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Array at()</h2>
+      <p>
+        The at() method returns an indexed element from an array.<br />
+        The at() method returns the same as [ ]. <br />
+        The at() method is supported in all modern browsers since March 2022
+        <br />The at() method returns an indexed element from an array:
+      </p>
+      <p id="demo27" class="style"></p>
+
+      <br />
+
+      <p>
+        JavaScript array elements are accesses using numeric indexes (starting
+        from 0). <br />
+        calling here fruit[2];
+      </p>
+      <p id="demo26" class="style"></p>
+
+      <br />
+      <p>
+        Many languages allows negative bracket indexing like [-1] to access
+        elements from the end of an object / array / string.
+
+        <br />This is not possible in JavaScript, because [ ] is used for
+        accessing both arrays and objects. obj[-1] refers to the value of key
+        -1, not to the last property of the object.
+
+        <br />The at() method was introduced in ES2022 to solve this problem.
+      </p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Accessing the Last Array Element</h2>
+      <p>
+        As we know, JavaScript array elements are accesses using numeric indexes
+        (starting from 0). <br />
+        So here I'm calling <br />
+        document.getElementById("demo12").innerHTML = fruit[6];
+      </p>
+      <p id="demo12" class="style"></p>
+
+      <br />
+
+      <p>
+        Here calling by length system : <br />
+        document.getElementById("demo12").innerHTML = fruit[fruit.length - 1];
+      </p>
+      <p id="demo13" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Popping and Pushing</h2>
+      <p>
+        When you work with arrays, it is easy to remove elements and add new
+        elements.
+        <br />
+        This is what popping and pushing is:
+        <br />
+        Popping items out of an array, or pushing items into an array.
+      </p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Array pop( )</h2>
+      <p>The pop() method removes the last element from an array:</p>
+      <p id="demo32" class="style"></p>
+      <br />
+      <p>The pop() method returns the value that was "popped out":</p>
+      <p id="demo33" class="style"></p>
+      <br />
+      <p>After using pop()</p>
+      <p id="demo34" class="style"></p>
+
+      <br />
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Shifting Elements</h2>
+      <h3>
+        Shifting is equivalent to popping, <br />
+        but working on the first element instead of the last.
+      </h3>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Array shift()</h2>
+      <p>
+        The shift() method removes the first array element and "shifts" all
+        other elements to a lower index.
+      </p>
+      <p id="demo35" class="style"></p>
+      <br />
+      <p>after using shift()</p>
+      <p id="demo36" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Array delete()</h2>
+      <p>
+        Warning !<br />
+        Using delete() leaves undefined holes in the array.<br />
+        Use pop() or shift() instead.
+      </p>
+      <p id="demo41" class="style"></p>
+      <br />
+      <p>after delete()</p>
+      <p id="demo42" class="style"></p>
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Array unshift()</h2>
+      <p>
+        The unshift() method adds a new element to an array (at the beginning),
+        and "unshifts" older elements.
+      </p>
+      <p id="demo37" class="style"></p>
+      <br />
+      <p>
+        after using unshift()<br />The unshift() method returns the new array
+        length. <br />output will be 5 as I added another name in unshift("...")
+      </p>
+      <p id="demo38" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Changing Elements</h2>
+      <p>before change</p>
+      <p id="demo39" class="style"></p>
+      <br />
+      <p>after change</p>
+      <p id="demo40" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Array push( )</h2>
+      <p>
+        The easiest way to add a new element to an array is using the push()
+        method:
+        <br />
+        The push() method adds a new element to an array (at the end):
+      </p>
+      <p>After using push()</p>
+
+      <p id="demo29" class="style"></p>
+
+      <br />
+
+      <p>
+        The push() method returns the new array length.<br />
+        output will be 7 cause I added another name here
+      </p>
+      <p id="demo31" class="style"></p>
+      <br />
+      <hr />
+
+      <h3>push() with function. click the button</h3>
+
+      <button onclick="pushFunction()">
+        Push New Name by clicking it once
+      </button>
+      <p id="demo16" class="style"></p>
+      <p id="demo17" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h3>
+        added a new element to an array is using the length in a function.<br />
+        names[names.length] = "Shamim Rahman Sam";
+      </h3>
+      <button onclick="lengthFunction()">
+        Add New Name by clicking it once
+      </button>
+      <p id="demo18" class="style"></p>
+      <p id="demo19" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <p>
+        WARNING ! <br />
+        Adding elements with high indexes can create undefined "holes" in an
+        array <br />
+        as we are getting as we are getting in index[4],[5],[6],[7],[8].<br />
+        Because we are adding an element in index[9]<br /><br />
+        N.B: The output of first index[0] is showing undefined. <br />Because we
+        deleted it already when we used array delete() method by using this
+        fruits array <br />
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      </p>
+      <p id="demo20" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <p>
+        WARNING !!<br />
+        If you use named indexes, JavaScript will redefine the array to an
+        object.<br />
+        After that, some array methods and properties will produce incorrect
+        results.
+      </p>
+      <p id="demo200" class="style"></p>
+      <p id="demo21" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+      <br />
+      <h2 class="underline-heading">The concat() Method</h2>
+      <p>The concat() method merges (concatenates) arrays:</p>
+      <p id="demo43" class="style"></p>
+
+      <br />
+      <p>
+        The concat() method does not change the existing arrays.<br />
+        It always returns a new array.
+        <br />
+        The concat() method can take any number of array arguments.
+      </p>
+      <p id="demo44" class="style"></p>
+      <br />
+      <p>
+        The concat() method can also take strings as arguments:<br />Merging an
+        Array with Values
+      </p>
+
+      <br />
+      <hr />
+      <br />
+      <h2 class="underline-heading">The copyWithin() Method</h2>
+
+      <p id="demo45" class="style"></p>
+      <p>
+        copyWithin() copies array elements to another position in an array,
+        overwriting existing values.<br />
+        Copy to index 2, all elements from index 0
+      </p>
+      <p id="demo46" class="style"></p>
+      <br />
+
+      <p>Copy to index 2, the elements from index 0 to 2:</p>
+
+      <p id="demo47" class="style"></p>
+      <p>
+        The copyWithin() method overwrites the existing values.
+        <br />
+        The copyWithin() method does not add items to the array.
+        <br />
+        The copyWithin() method does not change the length of the array.
+      </p>
+      <br />
+      <hr />
+      <br />
+      <h2 class="underline-heading">Array splice()</h2>
+      <p>The splice() method can be used to add new items to an array</p>
+      <p id="demo50" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">toSpliced()</h2>
+      <p>
+        ES2023 added the Array toSpliced() method as a safe way to splice an
+        array without altering the original array.
+        <br />
+        The difference between the new toSpliced() method and the old splice()
+        method is that <br />the new method creates a new array, keeping the
+        original array unchanged,<br />
+        while the old method altered the original array.
+      </p>
+      <p id="demo51" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Array slice()</h2>
+      <p>
+        The slice() method slices out a piece of an array into a new array<br />Slice
+        out a part of an array starting from array element 1 ("Orange")
+      </p>
+      <p id="demo52" class="style"></p>
+      <p>
+        The slice() method creates a new array.<br />
+
+        The slice() method does not remove any elements from the source array.
+        <br />The slice() method can take two arguments like slice(1, 3).
+        <br />
+        The method then selects elements from the start argument, and up to (but
+        not including) the end argument. If the end argument is omitted, like in
+        the first examples, the slice() method slices out the rest of the array.
+      </p>
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">The flat() Method</h2>
+      <p>
+        ES2019 Introduced the Array flat() method.<br />
+        The flat() method creates a new array with sub-array elements
+        concatenated to a specified depth.
+      </p>
+      <p id="demo48" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+      <h2 class="underline-heading">The flatMap() Method</h2>
+      <p>
+        ES2019 added the Array flatMap() method to JavaScript.<br />
+        The flatMap() method first maps all elements of an array and then
+        creates a new array by flattening the array.
+      </p>
+      <p id="demo49" class="style"></p>
+
+      <br />
+      <br />
+      <hr />
+      <br />
+      <hr />
+      <br />
+      <hr />
+      <br />
+      <br />
+
+      <h1 class="underline-heading">JavaScript Array Search</h1>
+      <br />
+
+      <h2 class="underline-heading">The indexOf() Method</h2>
+      <p>Array.indexOf() returns -1 if the item is not found.</p>
+      <p id="demo54" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">The includes() Method</h2>
+      <p>Check if the fruit array contains "Mango":</p>
+      <p id="demo55" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">The find() Method</h2>
+      <p>
+        The find() method returns the value of the first array element that
+        passes a test function.<br />the function takes 3 arguments:
+        <br />
+        The item value<br />
+        The item index<br />
+        The array itself
+      </p>
+      <p id="demo56" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Array findIndex()</h2>
+      <p>
+        The findIndex() method returns the index of the first array element that
+        passes a test function.
+      </p>
+      <p id="demo57" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">The findLast() Method</h2>
+      <p>
+        ES2023 added the findLast() method that will start from the end of an
+        array and return the value of the first element that satisfies a
+        condition.
+      </p>
+      <p id="demo58" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">findLastIndex() Method</h2>
+      <p>
+        The findLastIndex() method finds the index of the last element that
+        satisfies a condition <br />findLastIndex() is an ES2023 feature.
+      </p>
+      <p id="demo59" class="style"></p>
+
+      <br />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <hr />
+      <br />
+      <hr />
+      <br />
+
+      <h1 class="underline-heading">JavaScript Sorting Arrays</h1>
+      <br />
+
+      <h2 class="underline-heading">Sorting an Array</h2>
+      <p>The sort() method sorts an array alphabetically:</p>
+      <p id="demo60" class="style"></p>
+      <br />
+      <p>After using sort()</p>
+      <p id="demo61" class="style"></p>
+      <br />
+      <p>After using toSorted() Method</p>
+      <p id="demo63" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">The reverse() Method</h2>
+      <p>The reverse() method reverses the elements in an array:</p>
+      <p id="demo62" class="style"></p>
+      <br />
+      <p>After using toReversed() Method</p>
+      <p id="demo64" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Numeric Sort</h2>
+      <p>
+        By default, the sort() function sorts values as strings.
+        <br />
+        This works well for strings ("Apple" comes before "Banana").
+        <br />
+        If numbers are sorted as strings, "25" is bigger than "100", because "2"
+        is bigger than "1".
+        <br />
+        Because of this, the sort() method will produce incorrect result when
+        sorting numbers.
+        <br />
+        You can fix this by providing a compare function:
+      </p>
+      <p id="demo65" class="style"></p>
+      <br />
+      <p>Sort the array in ascending order:</p>
+      <p id="demo66" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+      <h2 class="underline-heading">Find Min or Max with sort()</h2>
+      <p>
+        After you have sorted an array, you can use the index to obtain the
+        highest and lowest values.
+      </p>
+      <p id="demo68" class="style"></p>
+      <br />
+
+      <br />
+      <hr />
+      <br />
+      <p>Sort the array in descending order:</p>
+      <p id="demo67" class="style"></p>
+
+      <br />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <hr />
+      <br />
+      <hr />
+      <br />
+
+      <h1 class="underline-heading">Array Iteration Methods</h1>
+      <br />
+      <h2 class="underline-heading">JavaScript Array forEach()</h2>
+      <p>
+        The forEach() method calls a function (a callback function) once for
+        each array element
+      </p>
+      <p>Call a function once for each array element:</p>
+      <p id="demo70" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">JavaScript Array map() and flatMap()</h2>
+      <p>
+        The map() method creates a new array by performing a function on each
+        array element.
+        <br />
+        The map() method does not execute the function for array elements
+        without values.
+        <br />
+        The map() method does not change the original array.
+      </p>
+      <p>Created a new array by performing a function on each array element:</p>
+      <p id="demo71" class="style"></p>
+      <br />
+      <br />
+      <p>
+        ES2019 added the Array flatMap() method to JavaScript.
+        <br />
+        The flatMap() method first maps all elements of an array and then
+        creates a new array by flattening the array.
+      </p>
+      <p id="demo72" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+      <h2 class="underline-heading">Array filter() and Array reduce()</h2>
+      <p>
+        The filter() method creates a new array with array elements that pass a
+        test.
+      </p>
+      <p id="demo73" class="style"></p>
+      <br />
+
+      <p>
+        The reduce() method runs a function on each array element to produce
+        (reduce it to) a single value.
+        <br />
+        The reduce() method works from left-to-right in the array. See also
+        reduceRight().
+        <br />
+        The reduce() method does not reduce the original array.
+      </p>
+      <p id="demo74" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Array every()</h2>
+      <p>The every() method checks if all array values pass a test.</p>
+      <p id="demo75" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Array some()</h2>
+      <p>The some() method checks if some array values pass a test:</p>
+      <p id="demo76" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Array keys()</h2>
+      <p>
+        The Array.keys() method returns an Array Iterator object with the keys
+        of an array.<br />Return an Array Iterator object with the keys of the
+        array
+      </p>
+      <p id="demo77" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">The entries() method</h2>
+      <p>
+        The entries() method returns an Array Iterator object with key/value
+        pairs:
+      </p>
+      <p id="demo78" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">The with() method</h2>
+      <p>
+        ES2023 added the Array with() method as a safe way to update elements in
+        an array without altering the original array.
+      </p>
+      <p id="demo79" class="style"></p>
+      <br />
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">The Array Spread (...)</h2>
+      <p>
+        The ... operator expands an iterable (like an array) into more
+        elements<br />
+        The "spread" operator spreads elements of iterable objects:
+      </p>
+
+      <p id="demo777" class="style"></p>
+
+      <br />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <hr />
+      <br />
+      <hr />
+      <br />
+
+      <h1 class="underline-heading">JavaScript Array Const</h1>
+      <br />
+      <p>
+        In 2015(ES6), JavaScript introduced an important new keyword: const. It
+        has become a common practice to declare arrays using const.
+        <br />
+        An array declared with const cannot be reassigned:<br />
+        const cars = ["Saab", "Volvo", "BMW"];<br />
+        cars = ["Toyota", "Volvo", "Audi"]; // ERROR<br />
+        <br />
+        The keyword const is a little misleading.
+        <br />
+        It does NOT define a constant array. It defines a constant reference to
+        an array.
+        <br />
+        Because of this, we can still change the elements of a constant array.
+        <br />Elements Can be Reassigned<br />
+        JavaScript const variables must be assigned a value when they are
+        declared:
+        <br />
+        Meaning: An array declared with const must be initialized when it is
+        declared.
+        <br />
+        Using const without initializing the array is a syntax error
+        <br />Arrays declared with var can be initialized at any time.<br />
+        An array declared with const has Block Scope.
+        <br />
+        An array declared in a block is not the same as an array declared
+        outside the block<br />An array declared with var does not have block
+        scope <br /><br />
+        Redeclaring an array declared with var is allowed anywhere in a
+        program<br />
+        var cars = ["Volvo", "BMW"]; // Allowed<br />
+        var cars = ["Toyota", "BMW"]; // Allowed<br />
+        cars = ["Volvo", "Saab"]; // Allowed<br />
+
+        <br /><br /><br />
+
+        Redeclaring or reassigning an array to const, in the same scope, or in
+        the same block, is not allowed<br />
+        var cars = ["Volvo", "BMW"]; // Allowed<br />
+        const cars = ["Volvo", "BMW"]; // Not allowed<br />
+        {<br />
+        var cars = ["Volvo", "BMW"]; // Allowed<br />
+        const cars = ["Volvo", "BMW"]; // Not allowed<br />
+        }
+
+        <br /><br /><br />
+
+        Redeclaring or reassigning an existing const array, in the same scope,
+        or in the same block, is not allowed<br />
+        const cars = ["Volvo", "BMW"]; // Allowed<br />
+        const cars = ["Volvo", "BMW"]; // Not allowed<br />
+        var cars = ["Volvo", "BMW"]; // Not allowed<br />
+        cars = ["Volvo", "BMW"]; // Not allowed<br />
+
+        { <br />const cars = ["Volvo", "BMW"]; // Allowed<br />
+        const cars = ["Volvo", "BMW"]; // Not allowed<br />
+        var cars = ["Volvo", "BMW"]; // Not allowed<br />
+        cars = ["Volvo", "BMW"]; // Not allowed<br />
+        }
+        <br />
+        <br />
+        <br />
+        Redeclaring an array with const, in another scope, or in another block,
+        is allowed
+        <br />
+        const cars = ["Volvo", "BMW"]; // Allowed<br />
+        { const cars = ["Volvo", "BMW"]; // Allowed } <br />
+        { const cars = ["Volvo", "BMW"]; // Allowed } <br />
+      </p>
+
+      <br />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <hr />
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Looping Array Elements</h2>
+      <p>One way to loop through an array, is using a for loop:</p>
+      <p id="demo14" class="style"></p>
+      <br />
+      <hr />
+      <br />
+      <p>We can also use the Array.forEach() function</p>
+      <p id="demo15" class="style"></p>
+
+      <br />
+      <br />
+      <hr />
+      <br />
+      <hr />
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Arrays are Objects</h2>
+      <p>
+        Arrays are a special type of objects. The typeof operator in JavaScript
+        returns "object" for arrays.<br />
+        But, JavaScript arrays are best described as arrays.<br />
+        Arrays use numbers to access its "elements". In this example, person[2]
+        returns Sam
+      </p>
+      <p id="demo7" class="style"></p>
+
+      <br />
+
+      <h3>Objects use names to access its "members".</h3>
+      <p>In this example, person.firstName returns Shamim</p>
+      <p id="demo8" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">
+        How to Recognize an Array (typeof operator)
+      </h2>
+      <p>
+        A common question is: How do I know if a variable is an array?
+        <br />
+        The problem is that the JavaScript operator typeof returns "object":<br />
+        The typeof operator returns object because a JavaScript array is an
+        object.
+      </p>
+      <p id="demo22" class="style"></p>
+      <br />
+      <p>
+        Solution 1: <br />
+        To solve this problem ECMAScript 5 (JavaScript 2009) defined a new
+        method <br />Array.isArray()
+      </p>
+      <p id="demo23" class="style"></p>
+      <br />
+      <p>
+        Solution 2:<br />
+        The instanceof operator returns true if an object is created by a given
+        constructor:
+      </p>
+      <p id="demo24" class="style"></p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Array Elements Can Be Objects</h2>
+      <p>
+        JavaScript variables can be objects. Arrays are special kinds of
+        objects.
+        <br />
+        Because of this, you can have variables of different types in the same
+        Array.
+        <br />
+        You can have objects in an Array. You can have functions in an Array.
+        You can have arrays in an Array:<br />
+      </p>
+      <h3>
+        myArray[0] = Date.now; <br />
+        myArray[1] = myFunction; <br />
+        myArray[2] = myCars;
+      </h3>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">
+        The Difference Between Arrays and Objects
+      </h2>
+      <p>
+        In JavaScript, arrays use numbered indexes. <br />
+        In JavaScript, objects use named indexes. <br />
+        Arrays are a special kind of objects, with numbered indexes.
+      </p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">When to Use Arrays. When to use Objects</h2>
+      <p>
+        JavaScript does not support associative arrays.<br />
+        You should use objects when you want the element names to be strings
+        (text).<br />
+        You should use arrays when you want the element names to be numbers.
+      </p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">JavaScript new Array()</h2>
+      <p>
+        JavaScript has a built-in array constructor new Array().
+        <br />
+        But you can safely use [ ] instead.
+        <br />
+        These two different statements both create a new empty array named
+        points:
+        <br />
+        const points = new Array();
+        <br />
+        const points = [ ];
+      </p>
+      <br />
+
+      <h3>There is no need to use new Array().</h3>
+      <br />
+      <p>
+        For simplicity, readability and execution speed, use the array literal
+        method.
+      </p>
+      <p id="demo3" class="style"></p>
+
+      <br />
+      <br />
+      <hr />
+      <br />
+      <hr />
+      <br />
+      <hr />
+      <br />
+
+      <h2 class="underline-heading">Nested Arrays and Objects</h2>
+      <p>
+        Values in objects can be arrays, and values in arrays can be objects:
+      </p>
+      <p id="demo25" class="style"></p>
+
+      <br />
+      <br />
+      <hr />
+      <hr />
+      <hr />
+      <br />
+      <br />
+    </main>
+
+    <footer>
+      All rights Reserved. <br />
+      Copyright &copy; 2024 <br />
+      Shamim Rahman Sam SRS <br />
+    </footer>
+
+    <script>
+      window.alert("JS ARRAY Manipulation by SHAMIM RAHMAN SAM (SRS)");
+    </script>
+  </body>
+</html>
